@@ -1,7 +1,6 @@
-const { Router } = require("express");
-const airplaneRoutes=require('./airplane-routes.js')
-const router = Router();
-
-router.use('/airplanes',airplaneRoutes);
-
-module.exports = router;
+const {Router}=require('express');
+const router=Router();
+router.get('/',(req,res)=>{
+    res.send('Hello World');
+})
+module.exports=router;
